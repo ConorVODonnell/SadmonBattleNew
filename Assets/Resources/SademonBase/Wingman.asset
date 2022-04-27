@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db9a519d212845bd8a1cf15bedb9d, type: 3}
+  m_Name: Wingman
+  m_EditorClassIdentifier: 
+  sadeName: Wingman
+  description: Caw CAW!
+  tile: {fileID: 11400000, guid: eecccd2267be19e408c1e25c582b0e17, type: 2}
+  learnableActs:
+  - {fileID: 11400000, guid: 816b42f0536208c4b9c53c890395a84e, type: 2}
+  - {fileID: 11400000, guid: 91cb1a589aba2c946a9f53e109e10e74, type: 2}
