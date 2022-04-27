@@ -1,0 +1,20 @@
+{
+    "name": "CubeCoordinate_Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:cd4f4ea1c37b88a488880b24fdb9bc23"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
