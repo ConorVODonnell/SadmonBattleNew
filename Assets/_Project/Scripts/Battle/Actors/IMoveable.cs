@@ -1,7 +1,9 @@
 public interface IMoveable
 {
-    void OnEnter(CubeCoordinate newLocation);
+
+
     void OnLeave(CubeCoordinate oldLocation);
+    void OnEnter(CubeCoordinate newLocation);
 
     void OnMove(CubeCoordinate newLocation, CubeCoordinate oldLocation) {
         OnLeave(oldLocation);

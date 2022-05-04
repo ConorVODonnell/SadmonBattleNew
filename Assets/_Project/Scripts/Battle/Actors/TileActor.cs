@@ -12,7 +12,7 @@ public abstract class TileActor
 
     public List<B_ActConstructor> Acts { get; protected set; } = new List<B_ActConstructor>();
 
-    Queue<BattleAct> PreEndActs, EndActs, PostEndActs, PreStartActs;
+    public List<B_ActConstructor> EveryTurnActs { get; protected set; } = new List<B_ActConstructor>();
 
     public CubeCoordinate WorldFromRelative(CubeCoordinate relativePosition) {
         return Location + relativePosition;

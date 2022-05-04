@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// LEFT IN BUT DO NOT USE
 public class TileEffectDB
 {
     public static Dictionary<TileEffectID, TileEffect> TileEffects = new Dictionary<TileEffectID, TileEffect>()

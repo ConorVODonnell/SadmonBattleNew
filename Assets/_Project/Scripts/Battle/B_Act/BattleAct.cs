@@ -7,11 +7,12 @@ public class BattleAct
     TileActor User;
     int strength;
     List<TileAct> Acts;
+    CubeCoordinate startingGridPosition;
 
     public void Invoke() {
         foreach (var act in Acts) {
+            var target = GetTarget(act);
             foreach (var effect in act.Effects) {
-                var target = GetTarget(act);
                 effect.InvokeEffect(User, target, strength);
             }
         }
