@@ -12,4 +12,8 @@ public class MoveBase : B_ActBase
     List<B_ActBase>
         WhenLeave = new List<B_ActBase>(),
         WhenEnter = new List<B_ActBase>();
+
+    public override PersonalAct DefaultAct() {
+        return new Pers_Move();
+    }
 }
