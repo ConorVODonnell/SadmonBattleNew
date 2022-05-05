@@ -10,10 +10,6 @@ public abstract class TileActor
 
     public bool Remains { get; private set; } = true;
 
-    public List<B_ActConstructor> Acts { get; protected set; } = new List<B_ActConstructor>();
-
-    public List<B_ActConstructor> EveryTurnActs { get; protected set; } = new List<B_ActConstructor>();
-
     public CubeCoordinate WorldFromRelative(CubeCoordinate relativePosition) {
         return Location + relativePosition;
     }
