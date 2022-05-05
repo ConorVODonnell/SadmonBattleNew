@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersonalActs
+public class PersonalAct
 {
     B_ActBase @base;
 
