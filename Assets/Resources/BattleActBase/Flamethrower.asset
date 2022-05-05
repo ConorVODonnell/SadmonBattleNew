@@ -10,7 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5bfca2c63292cd4ca543f8e39598c98, type: 3}
-  m_Name: RockThrow
+  m_Name: Flamethrower
   m_EditorClassIdentifier: 
-  moveName: Rock Throw
-  description: Chunk a boulder. Toss a stone. Hurl a pebble. Fling a hard ground.
+  moveName: Flamethrower
+  description: Burn them to the ground!
+  OnPrimary:
+  - effectID: 2
+    strength: 5
+  - effectID: 3
+    strength: 8
+  OnSplitPrime: []
+  OnSecondary: []
+  OnTertiary: []

@@ -16,8 +16,4 @@ public class AffectShapeBase : B_ActBase
     B_ActShape shape;
 
     public B_ActShape Shape { get { return shape; } }
-
-    public override PersonalAct DefaultAct() {
-        return new Pers_AffectShape();
-    }
 }

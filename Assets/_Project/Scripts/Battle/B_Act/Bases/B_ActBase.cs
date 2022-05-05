@@ -6,8 +6,11 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(fileName = "NewMove", menuName = "Sademon/New Action")]
 public abstract class B_ActBase : ScriptableObject
 {
-    [field: SerializeField] public string Name { get; private set; }
-    [field: SerializeField, TextArea] public string Description { get; private set; }
+    [SerializeField] string moveName;
 
-    public abstract PersonalAct DefaultAct();
+    [TextArea]
+    [SerializeField] string description;
+
+    public string Name { get { return moveName; } }
+    public string Description { get { return description; } }
 }
