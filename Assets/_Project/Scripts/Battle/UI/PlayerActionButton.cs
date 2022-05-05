@@ -8,8 +8,6 @@ public class PlayerActionButton : MonoBehaviour
     TMPro.TMP_Text buttonText;
     int buttonOrder;
 
-    B_ActConstructor currentAction;
-
     internal void Init(int order) {
         // Get Components
         button = GetComponent<Button>();
@@ -22,14 +20,12 @@ public class PlayerActionButton : MonoBehaviour
         // button.onClick.AddListener(() => { PC_Battle.OnActionSelected(buttonOrder); });
     }
 
-    public void UpdateButton(B_ActConstructor newAction) {
-        currentAction = newAction;
-        buttonText.text = newAction.Base.Name;
+    public void UpdateButton() {
+
     }
 
     // OnMouseOver()
     public void ShowDescription() {
-        if (currentAction != null)
-            print(currentAction.Base.Description);
+
     }
 }

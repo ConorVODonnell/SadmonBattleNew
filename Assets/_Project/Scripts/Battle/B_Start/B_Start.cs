@@ -67,8 +67,6 @@ public class B_Start : MonoBehaviour
 
     void SademonFromBase(SadeBase sadeBase, SadeParty party) {
         var sadeTA = new SadeTA(sadeBase);
-        foreach (var baseAtk in sadeBase.LearnableActs)
-            sadeTA.Acts.Add(new B_ActConstructor(baseAtk));
         party.AssignToParty(sadeTA);
     }
 }

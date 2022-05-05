@@ -13,14 +13,4 @@ public class Sademon
         Name = Base.Name;
     }
 
-    List<B_ActConstructor> DefaultActs() {
-        var defaultActs = new List<B_ActConstructor>();
-
-        foreach (var learnable in Base.LearnableActs) {
-            var newConstructor = new B_ActConstructor(learnable);
-        }
-
-        return defaultActs;
-    }
-
 }

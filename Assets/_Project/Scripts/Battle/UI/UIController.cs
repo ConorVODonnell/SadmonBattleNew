@@ -37,7 +37,7 @@ public class UIController : MonoBehaviour
 
         for (int b = 0; b < buttons.Length; b++) {
             if (ButtonIsActive(sademonActions, b)) 
-                buttons[b].UpdateButton(nowActive.Acts[b]);
+                buttons[b].UpdateButton();
         }
     }
 
@@ -49,7 +49,7 @@ public class UIController : MonoBehaviour
 
     int CountActions(SadeTA nowActive) {
         int sademonActions = 0;
-        if (nowActive != null) sademonActions = nowActive.Acts.Count;
+        //if (nowActive != null) sademonActions = 
 
         return sademonActions;
     }
