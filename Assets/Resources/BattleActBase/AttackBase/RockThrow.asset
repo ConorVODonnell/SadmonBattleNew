@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a00fb2e20bbb8f4ab4b8c4166a6da09, type: 3}
   m_Name: RockThrow
   m_EditorClassIdentifier: 
-  description: 
+  <Name>k__BackingField: Rick Throw
+  <Description>k__BackingField: 

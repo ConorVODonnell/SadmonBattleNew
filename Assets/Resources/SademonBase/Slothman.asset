@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2db9a519d212845bd8a1cf15bedb9d, type: 3}
+  m_Script: {fileID: 11500000, guid: f2e56619527f3bb4f8249ef78d21ce5b, type: 3}
   m_Name: Slothman
   m_EditorClassIdentifier: 
-  sadeName: Sothman
-  description: Does some really cool sloth things, if I'm being honest.
-  tile: {fileID: 11400000, guid: 505883c268eb2d4428e4a356548db52f, type: 2}
-  learnableActs:
-  - {fileID: 11400000, guid: 816b42f0536208c4b9c53c890395a84e, type: 2}
-  - {fileID: 11400000, guid: fdb233d63c55ba5458a1ce78b450d030, type: 2}
-  - {fileID: 11400000, guid: 6062793e446c42f448a7e224a5bf68df, type: 2}
+  <Name>k__BackingField: Slothman
+  <Description>k__BackingField: Does everything a sloth can
+  <Tile>k__BackingField: {fileID: 11400000, guid: 505883c268eb2d4428e4a356548db52f, type: 2}
+  <Move>k__BackingField: {fileID: 11400000, guid: 74f5a79d58d800546a677625dd76715c, type: 2}
+  <LearnableActs>k__BackingField:
+  - {fileID: 11400000, guid: c69a32bdf7a2aa543bb50febfcd0bfdf, type: 2}

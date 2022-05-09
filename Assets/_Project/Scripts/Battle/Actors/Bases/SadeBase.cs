@@ -6,21 +6,13 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(fileName = "NewSademon", menuName = "Sademon/New Sademon")]
 public class SadeBase : ScriptableObject
 {
-    [SerializeField] string sadeName;
-    [TextArea]
-    [SerializeField] string description;
+    [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField, TextArea] public string Description { get; private set; }
 
-    [SerializeField] TileBase tile;
+    [field: SerializeField] public TileBase Tile { get; private set; }
 
-    [SerializeField] List<B_ActBase> learnableActs;
-
-    // Properties
-    public string Name => sadeName;
-    public string Description => description;
-
-    public TileBase Tile => tile;
-
-    public List<B_ActBase> LearnableActs => learnableActs;
+    [field: SerializeField] public MoveBase Move { get; private set; }
+    [field: SerializeField] public List<B_ActBase> LearnableActs { get; private set; }
 }
 
 public enum SademonType
@@ -34,4 +26,3 @@ public enum SademonType
     Rock,
     Poison,
 }
-

@@ -67,6 +67,10 @@ public class B_Start : MonoBehaviour
 
     void SademonFromBase(SadeBase sadeBase, SadeParty party) {
         var sadeTA = new SadeTA(sadeBase);
+        var persMove = sadeTA.Sademon.Move;
+        foreach (var act in persMove.WhenEnter) {
+            print(act.Name);
+        }
         party.AssignToParty(sadeTA);
     }
 }
