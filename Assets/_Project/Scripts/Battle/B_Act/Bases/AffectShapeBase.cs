@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewAffectShape", menuName = "Sademon/New Affect Shape Act")]
-public class AffectShapeBase : B_ActBase
+[CreateAssetMenu(fileName = "NewAffectShape", menuName = "Sademon/Affect Shape Act")]
+public class AffectShapeBase : B_AttackBase
 {
-    [SerializeField]
-    B_ActShape shape;
+    [field: SerializeField] public B_ActShape Shape { get; protected set; }
 
-    public B_ActShape Shape { get { return shape; } }
+    public override PersonalAttack DefaultAttack() {
+        var affectShape = new Pers_AffectShape(this);
 
-    public override PersonalAct DefaultAct() {
-        return new Pers_AffectShape();
+        return affectShape;
     }
 }

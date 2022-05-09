@@ -1,19 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewMoveAct", menuName = "Sademon/New Move Act")]
-public class MoveBase : B_ActBase
+public abstract class MoveBase : B_ActBase
 {
-    [SerializeField]
-    int minDist, maxDist;
+    [field: SerializeField] public List<B_AttackBase> WhenLeave { get; private set; }
+    [field: SerializeField] public List<B_AttackBase> WhenEnter { get; private set; }
 
-    [SerializeField]
-    List<B_ActBase>
-        WhenLeave = new List<B_ActBase>(),
-        WhenEnter = new List<B_ActBase>();
+    public override PersonalAct DefaultPersonal() {
+        var move = new Pers_Move(this);
 
-    public override PersonalAct DefaultAct() {
-        return new Pers_Move();
+        return move;
+    }
+
+    public List<PersonalAttack> DefaultWhenLeave() {
+        return DefaultAtackList(WhenLeave);
+    }
+    public List<PersonalAttack> DefaultWhenEnter() {
+        return DefaultAtackList(WhenEnter);
     }
 }

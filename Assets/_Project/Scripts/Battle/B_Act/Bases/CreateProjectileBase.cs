@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewCreateProjectileAct", menuName = "Sademon/New Create Projectile Act")]
-public class CreateProjectileBase : B_ActBase
+[CreateAssetMenu(fileName = "NewCreateProjectileAct", menuName = "Sademon/Create Projectile Act")]
+public class CreateProjectileBase : B_AttackBase
 {
-    public override PersonalAct DefaultAct() {
-        return new Pers_CreateProjectile();
+    public override PersonalAttack DefaultAttack() {
+        var createProjectile = new Pers_CreateProjectile(this);
+
+        return createProjectile;
     }
 }
