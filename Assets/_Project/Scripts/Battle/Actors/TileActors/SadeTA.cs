@@ -6,22 +6,22 @@ using UnityEngine.Tilemaps;
 public class SadeTA : TileActor, IDamageable
 {
     public Sademon Sademon;
-
     public bool isPlayer;
-
     public override TileBase Tile => Sademon.Base.Tile;
 
     public SadeTA(Sademon sademon) {
-        Sademon = sademon;
-        Name = Sademon.Base.Name;
+        SetupSadeTA(sademon);
+    }
+    public SadeTA(SadeBase sademonBase) {
+        var sademon = new Sademon();
+        sademon.Init(sademonBase);
+
+        SetupSadeTA(sademon);
     }
 
-    public SadeTA(SadeBase sademonBase) {
-        var sade = new Sademon();
-        sade.Init(sademonBase);
-
-        Sademon = sade;
-        Name = sademonBase.Name;
+    void SetupSadeTA(Sademon sademon) {
+        Sademon = sademon;
+        Name = Sademon.Base.Name;
     }
 
     public override void MoveTo(CubeCoordinate newLocation) {
