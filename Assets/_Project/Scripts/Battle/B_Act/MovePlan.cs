@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,20 @@ using UnityEngine;
 public class MovePlan : ActPlan
 {
     public void PerformAction() {
-        PerformMove();
+        if(CanPerformActEntirely())
+            PerformMove();
     }
 
     void PerformMove() {
-        if (User is not IMoveable) throw new System.Exception("User of action cannot move.");
-
         LeavingAttacks();
         TakeAStep();
         EnteringAttacks();
+    }
+
+    bool CanPerformActEntirely() {
+        if (User is not IMoveable) throw new System.Exception("User of action cannot move.");
+
+        return true;
     }
 
     void EnteringAttacks() {
