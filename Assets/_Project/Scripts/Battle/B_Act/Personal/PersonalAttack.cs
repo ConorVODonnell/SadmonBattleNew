@@ -6,4 +6,6 @@ public abstract class PersonalAttack : PersonalAct
 {
     protected PersonalAttack(B_AttackBase battleAttackBase) : base(battleAttackBase) {
     }
+
+    public abstract void AttackTile(CubeCoordinate centerOfAttack);
 }

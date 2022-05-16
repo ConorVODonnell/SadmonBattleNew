@@ -10,6 +10,10 @@ public class Pers_CreateProjectile : PersonalAttack
 
     }
 
+    public override void AttackTile(CubeCoordinate centerOfAttack) {
+        throw new System.NotImplementedException();
+    }
+
     class PersonalProjectile
     {
         ProjectileBase Base;
